@@ -6,7 +6,8 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class BusinessException extends RuntimeException {
-    public BusinessException(String message) {
-        super(message);
-    }
+    private final String msg;
+//    public BusinessException(String message) {
+//        super(message);
+//    }
 }
